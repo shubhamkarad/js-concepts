@@ -6,28 +6,28 @@
 // Repeat steps 2-5 until all elements are sorted.
 
 // Time Complexity: Insertion Sort has a time complexity of O(n2) in the worst and average cases, where n is the number of elements in the list. This happens when the elements are in reverse order. However, it performs well with nearly sorted data, achieving a best-case time complexity of O(n).
-    
+
 //     Space Complexity: Insertion Sort has a space complexity of O(1), meaning it sorts the list in place and requires only a constant amount of additional memory.
-    
+
 //     Insertion Sort is efficient for small datasets and is adaptive, meaning it is efficient for data sets that are already substantially sorted. Its simplicity and ease of implementation make it a good choice for situations where these factors are more critical than performance on large datasets.
 
-
+// Remeber this as a playing card: How we insert the card based on the order.
 function insertionSort(arr) {
-    let n = arr.length;
+  let n = arr.length;
 
-    for (let i = 1; i < n; i++) {
-        let key = arr[i];
-        let j = i - 1;
+  for (let i = 1; i < n; i++) {
+    let key = arr[i];
+    let j = i - 1;
 
-        // Move elements of arr[0..i-1] that are greater than key to one position ahead of their current position
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j = j - 1;
-        }
-        arr[j + 1] = key;
+    // Move elements of arr[0..i-1] that are greater than key to one position ahead of their current position
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j = j - 1;
     }
+    arr[j + 1] = key;
+  }
 
-    return arr;
+  return arr;
 }
 
 // Example usage
