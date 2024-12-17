@@ -6,6 +6,12 @@
 // Continue this process until the end of the list is reached.
 // Repeat steps 1-5 until the list is fully sorted.
 
+
+// Time complexity in worst case scenario: o(n^2), Best case scenario: o(n)
+// Space complexity O(1)
+
+// Not most efficient for the large data sets
+
 let arr1 = [20,12,30,10, 9, 5,40];
 
 const bubbleSort = (arr) => {
