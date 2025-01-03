@@ -1,0 +1,16 @@
+Practical Applications: 
+
+1. Binary Systems:
+
+Used to store data and execute instructions in computing systems.
+Example: File storage, data representation in databases.
+
+2.Bit Manipulation:
+
+Essential in low-level programming for performance optimization.
+Example: Flipping bits for encryption or error detection.
+
+3.Logical Gates:
+
+Used in hardware design, such as CPUs and memory units.
+Example: ALUs (Arithmetic Logic Units) rely on gates for calculations.
