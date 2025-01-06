@@ -124,4 +124,10 @@ for (let i = 0; i < arr.length; i++) {
 splice can be slow because it shifts elements. Use it sparingly.
 Use Typed Arrays
 
+### Locale Compare for Strings:
+#### Example:
+    const names = ['éclair', 'apple', 'banana'];
+    names.sort((a, b) => a.localeCompare(b));
+    console.log(names); // Output: ['apple', 'banana', 'éclair']
+
 In performance-critical applications (e.g., game development), use typed arrays like Int32Array or Float64Array for efficiency.
