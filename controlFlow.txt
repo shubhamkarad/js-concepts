@@ -1,0 +1,187 @@
+Control Flow in JavaScript
+Control flow refers to the order in which the computer executes statements in a script. By default, JavaScript code executes from top to bottom, line by line. However, control flow statements allow developers to alter this execution sequence to create more dynamic and interactive programs.
+
+Categories of Control Flow in JavaScript:
+
+Sequential Execution
+Statements execute one after another in the order they are written.
+Example:
+console.log("Step 1");
+console.log("Step 2");
+console.log("Step 3");
+
+Conditional Statements
+Conditional statements control execution based on a condition (true or false).
+
+if Statement
+Executes a block of code if a condition is true.
+
+
+const age = 18;
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+if-else Statement
+Provides an alternative block if the condition is false.
+
+const age = 16;
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+if-else if-else Ladder
+Allows checking multiple conditions.
+
+const grade = 85;
+if (grade >= 90) {
+  console.log("A");
+} else if (grade >= 80) {
+  console.log("B");
+} else {
+  console.log("C");
+}
+switch Statement
+Used for multi-branching based on specific values.
+
+const day = "Monday";
+switch (day) {
+  case "Monday":
+    console.log("Start of the week.");
+    break;
+  case "Friday":
+    console.log("Almost the weekend.");
+    break;
+  default:
+    console.log("Just another day.");
+}
+Loops
+Loops repeat a block of code as long as a condition is met.
+
+for Loop
+Iterates a specific number of times.
+
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+while Loop
+Repeats as long as the condition is true.
+
+
+let count = 0;
+while (count < 3) {
+  console.log(count);
+  count++;
+}
+do-while Loop
+Executes at least once before checking the condition.
+
+let count = 0;
+do {
+  console.log(count);
+  count++;
+} while (count < 3);
+for-in Loop
+Iterates over the properties of an object.
+
+
+const obj = { a: 1, b: 2, c: 3 };
+for (const key in obj) {
+  console.log(`${key}: ${obj[key]}`);
+}
+for-of Loop
+Iterates over iterable objects like arrays.
+
+const arr = [10, 20, 30];
+for (const num of arr) {
+  console.log(num);
+}
+Jump Statements
+Allow altering the normal control flow by jumping to another point in the code.
+
+break
+Exits a loop or switch statement.
+
+for (let i = 0; i < 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
+continue
+Skips the current iteration and moves to the next one.
+
+for (let i = 0; i < 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+return
+Exits a function and optionally returns a value.
+
+function greet(name) {
+  return `Hello, ${name}`;
+}
+console.log(greet("Alice")); // Output: Hello, Alice
+Error Handling
+Used to handle runtime errors gracefully.
+
+try-catch Statement
+Catches errors in a block of code.
+
+try {
+  console.log(a); // ReferenceError: a is not defined
+} catch (error) {
+  console.log("An error occurred:", error.message);
+}
+finally Block
+Executes code after try and catch, regardless of the outcome.
+
+try {
+  console.log("Try block");
+} catch (error) {
+  console.log("Catch block");
+} finally {
+  console.log("Finally block");
+}
+Throwing Errors
+Manually throw errors.
+
+function checkAge(age) {
+  if (age < 18) {
+    throw new Error("Underage");
+  }
+  return "Access granted.";
+}
+
+try {
+  console.log(checkAge(15));
+} catch (error) {
+  console.log(error.message);
+}
+Asynchronous Control Flow
+Handles operations that take time to complete (e.g., API calls, timers).
+
+setTimeout
+Executes a function after a delay.
+
+setTimeout(() => console.log("Hello after 2 seconds"), 2000);
+setInterval
+Executes a function repeatedly at fixed intervals.
+
+let count = 0;
+const intervalId = setInterval(() => {
+  console.log(count++);
+  if (count === 5) clearInterval(intervalId);
+}, 1000);
+Promises and Async/Await
+Manages asynchronous tasks more cleanly.
+
+async function fetchData() {
+  try {
+    const response = await fetch("https://api.example.com/data");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("Error fetching data:", error);
+  }
+}
+fetchData();
