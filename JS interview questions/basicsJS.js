@@ -8,7 +8,7 @@ console.log(reverseString("Hello World")); // "dlroW olleH"
 
 const evenNumber = (n) => n%2===0;
 
-console.log(evenNumber(1)); // true
+console.log(evenNumber(1)); // false
 
 
 // Find a factorial number
@@ -27,13 +27,15 @@ console.log("Factorial Number", factorial(5)); // 120
 function primeNumber(n) {
     if(n<=1) return false;
     for (let i = 2; i < Math.sqrt(n); i++) {
-            if(n%i===0) return false;
+        if(n%i===0) {
+            return false;
+        }
     }
     return true;
 }
 
 
-console.log("Prime Number", primeNumber(11)); // true
+console.log("Prime Number", primeNumber(7)); // true
 
 
 // Find the largest number from the nested array
@@ -50,4 +52,4 @@ function nestedArray(nestedArray) {
     return largest;
 }
 
-console.log("Largest Number", nestedArray([[1,2,3], [4,5,10], [7,8,9]])); // 9
+console.log("Largest Number", nestedArray([[1,2,3], [4,5,10], [7,8,9]])); // 10

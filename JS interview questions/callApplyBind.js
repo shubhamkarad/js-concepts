@@ -39,4 +39,4 @@ function invite(greet1, greet2) {
 let invEmp1 = invite.bind(emp1);
 let invEmp2 = invite.bind(emp2);
 invEmp1("Hello", "How Are you?");
-invEmp2("Hello", "How Are you?");
+invEmp2("Hello", "How Are u?");
