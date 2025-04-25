@@ -6,11 +6,11 @@ const fibonacci = (n) => {
     for(let i=2;i<=n;i++) {
         arr.push(arr[i-1] + arr[i-2]);
     }
-    console.log(arr);
-    return arr[n];
+    // console.log(arr);
+    return arr;
 }
 
-const res = fibonacci(5);
+const res = fibonacci(10);
 console.log(res);
 
 

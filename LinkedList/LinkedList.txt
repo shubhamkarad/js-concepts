@@ -1,0 +1,25 @@
+What is a Linked List?
+A Linked List is a linear data structure where elements, called nodes, are connected using pointers. Each node contains two components:
+
+Data: The value of the node.
+Next: A reference (or pointer) to the next node in the sequence.
+
+Types of Linked Lists
+
+Singly Linked List: Each node points to the next node.
+Doubly Linked List: Each node points to both the next and previous nodes.
+Circular Linked List: The last node points back to the first node, forming a loop.
+
+Why Use Linked Lists?
+
+Dynamic Size: Linked lists can grow or shrink dynamically without memory reallocation.
+Efficient Insertions/Deletions: No shifting of elements is required (unlike arrays).
+Memory Usage: Nodes are stored non-contiguously, making better use of fragmented memory.
+
+Limitations of Linked Lists
+
+Sequential Access: Accessing elements is slower (O(n)) compared to arrays (O(1) for index-based access).
+Overhead: Requires extra memory for pointers.
+
+Do We Use Linked Lists in JavaScript?
+JavaScript does not have a built-in LinkedList structure, as arrays are highly optimized and usually suffice. However, linked lists can be implemented manually when needed, such as for:
