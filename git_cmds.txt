@@ -1,0 +1,9 @@
+### Git Commands:
+
+1. Modify the git branch name:
+    1. Switch to the old branch - git checkout -b old-branch-name.
+    2. Rename the branch name - git branch -m new-branch-name.
+    3. verify the renaming - git status.
+    4. Rename the local branch - git push origin new-branch-name, git push origin —delete old-branch-name.
+    5. Reset the upstream branch - git push —set-upstream origin new-branch-name.
+    6.
