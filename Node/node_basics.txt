@@ -1,0 +1,151 @@
+• Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data.
+
+You cannot access DOM in Node JS.
+• Better synchronization of code between server and client due to same code base.
+
+Since Node.js is single-threaded, CPU intensive tasks are not its strong suit.
+
+Uses JIT compiler. 
+
+console.time, console.timeEnd
+
+Demultiplexer. 
+
+unit testing —> integration testing —> E2E testing
+
+Node JS Data security
+
+1. Injection attack: SQL injection:  When user Input are directly used in SQL queries. - Use ORM libraries to handle the database interactions safely.
+2.  XSS - (Cross-site scripting): Occurs when users inputs are not sanitized properly. - use express validators. 
+3. Poorly configured security settings can expose the application attacks. - Use HELMET to secure HTTP headers.
+4. Insecure dependencies:  Using outdated dependencies. - Regularly update dependecies.
+5. Denial of service attack: Attackers can overwhelm the server with requests, causing it to become unresponsive. - implement rate limiting using middleware express-rate-limit.
+6. Authentication & authorization: Weak authentication - Use Passport or implement MFA. Ensuere proper role based access.
+7. Data exposure: Sensitive Data such as passwords & API keys can be exposed if not handled properly. Ensure HTTPs is used to encrypt the data in transit. use Bctypt to hash 
+
+## Node js Built-in modules:
+
+HTTP, util, fs - to deal with the file I/O  operations, UR, query string, stream - includes to handle the streaming data , zlib - includes methods to compress or decompress files.
+
+# **What does event-driven programming mean?**
+
+An event-driven programming approach uses events to trigger various functions. An event can be anything, such as typing a key or clicking a mouse button. A call-back function is already registered with the element executes whenever an event is triggered.
+
+# **What is an EventEmitter in Node.js?**
+
+- EventEmitter is a class that holds all the objects that can emit events
+- Whenever an object from the EventEmitter class throws an event, all attached functions are called upon synchronously
+
+![](https://www.simplilearn.com/ice9/free_resources_article_thumb/eventemitter.JPG)
+
+ 
+
+The two types of API functions in Node.js are:
+
+- Asynchronous, non-blocking functions
+- Synchronous, blocking functions
+
+**What is the package.json file?**
+
+This file holds the metadata for a particular project. 
+
+# **What are streams in Node.js?**
+
+Streams are objects that enable you to read data or write data continuously.
+
+There are four types of streams:
+
+**Readable –** Used for reading operations
+
+**Writable −** Used for write operations
+
+**Duplex −** Can be used for both reading and write operations
+
+**Transform −** A type of duplex stream where the output is computed based on input
+
+# **What is the control flow function?**
+
+The control flow function is a piece of code that runs in between several asynchronous function calls.
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6f3e511f-ac13-4cd5-bb4d-60b6958329d6/8320ca84-87bc-4390-970c-f5eec5c528e9/image.png)
+
+# **What is piping in Node.js?**
+
+Piping is a mechanism used to connect the output of one stream to another stream. It is normally used to retrieve data from one stream and pass output to another stream
+
+What is callback hell?
+
+It is also known as a pyramid of doom. The result of intensively nested, unreadable & unmanageable callbacks. Which in turns makes the code harder to read & debug.
+
+## Difference between Middleware & interceptor?
+
+Middleware: 
+
+It is a function to set of function that sits in the request-response cycle of web app.
+
+It operates on requests before they reach the handlers or on before they are sent back to the client. 
+
+Middleware is framework-specific (Node JS, .net, etc).
+
+It is executed sequentially in the order they are defined. 
+
+Middleware typically handles: 
+
+logging, Authentication, request parsing (eg. body-parser). error hadnling.
+
+How it works ? req, res, next ();
+
+Interceptor: 
+
+Use to intercept the HTTP req & res. Commonly used in Angular, AXIOS.
+
+They allow modification of HTTP request or response. 
+
+It often handles: 
+
+1. Adding Auth in header.
+2. Modifying req & res. 
+3. Handling global API errors. 
+
+## Timing features in Node js
+
+1. setTimeout/ clearTimeout - Used to schedule code execution after designated amount of milliseconds. 
+2. setInterval/clearInterval() - Used to execute a block of code multiple times.
+3. setImmediate/clearImmediate - used to execute code at the end of the current event loop cycle.
+
+# **What is a fork in node JS?**
+
+The Fork method in Node.js creates a new child process that runs a separate Node.js instance and can be useful for running CPU-intensive tasks or creating a cluster of Node.js servers.
+
+# **Are there any disadvantages to using Node.js?**
+
+Node.Js is not suitable for CPU-intensive tasks. This is because Node.js is single-threaded, meaning it can only execute one task at a time. Node.js is not suitable for applications that require a lot of memory. This is because Node.js uses a lot of memory for each connection. If you have a large number of connections, it can quickly consume a lot of memory.
+
+# **What is Libuv?**
+
+Libuv is a critical component of Node.js, and it's what makes it possible to handle I/O operations in a non-blocking and efficient manner.
+
+# **How does Node.js handle the child threads?**
+
+Node.js handles child threads by creating separate instances of the Node.js runtime environment that can be used to execute code in parallel with the main process.
+
+# **How to Enhance Node.js Performance through Clustering?**
+
+Clustering can be used to improve the performance of HTTP servers, database connections, and other I/O operations. However, it is important to note that clustering does not guarantee a linear increase in performance.
+
+# **What is a thread pool, and which library handles it in Node.js?**
+
+A thread pool is a collection of threads that are used to execute tasks in parallel. In Node.js, the thread pool is handled by the libuv library, which is a multi-platform support library that provides asynchronous I/O operations.
+
+The fs. stat() method returns an object that contains information about the file, such as the file size, creation date, and modified date.
+
+- DB
+- System Design
+- Algorithms
+- API design
+- API Security
+- CI/CD
+- DS
+- Docker/ Kubernetes
+- Caching
+- Messaging
