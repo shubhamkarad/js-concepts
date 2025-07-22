@@ -1,0 +1,34 @@
+## Efficient scanning of Data
+
+1. Creating indexes is a good way to avoid a full scan. 
+
+### B-tree - Used for equality and range queries.
+
+### Hash indexes used for equality.
+
+Bitmap are used for set operations
+
+## Partitions
+
+Storing table data in multiple sub-tables, known as  partitions.
+
+Used to improve the query, load and delete operations.
+
+ 
+
+### Partition key
+
+It is a column in the table that is used to determine the table which partition will store the data.
+
+[SQL queries for interview](https://www.notion.so/SQL-queries-for-interview-14b413d6e160808fa9fcf7ab4f62144e?pvs=21)
+
+## Joins
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6f3e511f-ac13-4cd5-bb4d-60b6958329d6/4d28de01-d899-4663-bb67-233f14ae904b/image.png)
+
+- Inner Join - Returns from both the tables that  have corresponding rows
+- Left outer join - Return all the rows from the left table. Also returns the matching rows from the right table.
+- Right outer join - Return all the rows from the Right table. It also returns the matching table from the left table.
+- Full outer join - Returns all the rows from both tables.
+- 
+-
