@@ -1,0 +1,33 @@
+### Basic Structure of a Recursive Function
+
+A recursive function has two main parts:
+
+1. **Base case**: This stops the recursion when a condition is met.
+2. **Recursive case**: The function calls itself with a smaller portion of the problem.
+
+### Example: Calculating Factorial
+
+A factorial of a number nnn (written as n!n!n!) is the product of all positive integers up to nnn. For instance, 5!=5×4×3×2×1=1205! = 5 \times 4 \times 3 \times 2 \times 1 = 1205!=5×4×3×2×1=120.
+
+The recursive way to calculate a factorial:
+
+- Base case: If n is 1 or 0, return 1.
+- Recursive case: Otherwise, multiply n by the factorial of n−1.
+
+```jsx
+function factorial(n) {
+  // Base case: If n is 0 or 1, return 1 (as 0! and 1! are both 1)
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  // Recursive case: Multiply n by the factorial of (n - 1)
+  return n * factorial(n - 1);
+}
+
+// Test the function
+console.log(factorial(5));  // Output: 120
+```
+
+- If `n` is 0 or 1, `factorial(n)` returns 1 (base case).
+- Otherwise, the function multiplies `n` by `factorial(n - 1)`, which calls the function again with `n - 1`.
+- This continues until `n` is reduced to 1, at which point the function returns 1 and the recursive calls start returning values back up the chain.
