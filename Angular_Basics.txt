@@ -1,0 +1,29 @@
+Angular Basics
+
+main.ts - Entry point to Angular
+
+## Properties & interpolations
+
+## ngOnInit - Where the component loads
+
+### **Lifecycle Execution Order**
+
+Here’s the typical sequence in order:
+
+1. **ngOnChanges** (if `@Input` properties change).
+2. **ngOnInit** (initialization of the component).
+3. **ngDoCheck** (custom change detection logic).
+4. **ngAfterContentInit** (after `<ng-content>` is initialized).
+5. **ngAfterContentChecked** (after projected content is checked).
+6. **ngAfterViewInit** (after the component's view is initialized).
+7. **ngAfterViewChecked** (after the component's view is checked).
+8. **ngOnDestroy** (just before the component is destroyed).
+
+### **Best Practices for Lifecycle Hooks**
+
+1. **Use `ngOnInit`** for initialization logic like API calls or setting up properties.
+2. **Avoid heavy logic in `ngDoCheck`** as it runs frequently.
+3. **Clean up resources** like subscriptions or intervals in `ngOnDestroy`.
+4. **Use `ngAfterViewInit`** for DOM-dependent libraries but avoid modifying DOM elements directly.
+
+Hi Sir, Good morning. Sorry I was not able to join the Standup as I was stuck in the traffic when coming to office
