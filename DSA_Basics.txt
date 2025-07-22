@@ -1,0 +1,206 @@
+Here’s a **detailed DSA (Data Structures and Algorithms) learning plan** tailored for **JavaScript** with the aim of helping you clear your basic concepts and prepare for **full-stack developer interviews**.
+
+We’ll focus on core DSA concepts that are commonly asked in interviews and useful for full-stack development, along with **JavaScript-specific implementations**. The plan is structured in **four phases** across **10-12 weeks** to ensure steady progress.
+
+---
+
+## **Learning Plan for DSA in JavaScript (10-12 Weeks)**
+
+---
+
+### **Phase 1: Basics of JavaScript & Big-O Notation (1 Week)**
+
+This phase ensures you have a good grasp of **JavaScript fundamentals** needed for solving DSA problems and introduces you to **time and space complexity**.
+
+### **Key Concepts**:
+
+- **JavaScript Fundamentals**:
+    - Hoisting, Closures, Scope, Higher-Order Functions
+    - `Map`, `Set`, and ES6 array methods (`map`, `filter`, `reduce`)
+    - Recursion basics
+- **Big-O Notation**:
+    - Time & Space Complexity
+    - Common Complexities: O(1), O(n), O(n²), O(log n)
+    - How to analyze the time complexity of your code.
+
+### **Resources**:
+
+- **Eloquent JavaScript** – Chapters on functions and data structures.
+- **Big-O Cheat Sheet** from [Big-O Cheat Sheet](https://www.bigocheatsheet.com/).
+- Practice recursion: Write a function to calculate the **factorial** or **Fibonacci numbers**.
+
+### **Tasks**:
+
+- Write functions using `reduce`, `map`, and `filter`.
+- Implement basic recursion problems like factorial or Fibonacci.
+
+---
+
+### **Phase 2: Data Structures (4 Weeks)**
+
+In this phase, you will learn **core data structures** by implementing them and solving real-world problems using them.
+
+### **Week 2: Arrays and Strings**
+
+- **Concepts**:
+    - Array operations: Insertion, Deletion, Rotation
+    - Two-pointer technique
+    - Sliding window problems
+    - String manipulation (Palindrome, Anagrams, Substrings)
+- **Tasks**:
+    - Implement a function to **rotate an array**.
+    - Find the **longest palindrome** in a string.
+    - **Two Sum Problem** (Find two numbers in an array that sum to a target value).
+- **Practice on**: LeetCode (Easy - Array, String Problems).
+
+---
+
+### **Week 3: Linked List and Stack/Queue**
+
+- **Concepts**:
+    - **Singly and Doubly Linked Lists**: Insert, Delete, Reverse
+    - **Stacks**: LIFO, Implement with Arrays/Linked List
+    - **Queues** and **Deques**: FIFO, Circular Queue
+- **Tasks**:
+    - Write a function to **reverse a linked list**.
+    - Implement a **browser history** feature using a stack.
+    - Implement a queue to manage **API requests**.
+- **Practice on**: LeetCode/Easy Problems (Linked List, Stack, Queue).
+
+---
+
+### **Week 4: Hash Maps and Sets**
+
+- **Concepts**:
+    - **Hash Tables**: Key-value pairs, Hash collisions
+    - **Sets** for unique elements
+    - Use cases: Caching, Frequency count, Anagrams
+- **Tasks**:
+    - Implement a function to **find duplicate elements** using a set.
+    - Create a **frequency counter** for words in a string.
+    - Solve **two-sum problem** using a hash map for O(n) solution.
+- **Practice on**: LeetCode (Easy Hashing Problems).
+
+---
+
+### **Week 5: Trees and Binary Search Trees (BST)**
+
+- **Concepts**:
+    - **Binary Trees**: Preorder, Inorder, Postorder traversal
+    - **Binary Search Trees (BST)**: Insert, Delete, Search
+    - **Balanced Trees** (AVL, Red-Black Tree - just understand the basics)
+    - Tree problems: Height, Diameter, Lowest Common Ancestor
+- **Tasks**:
+    - Implement a **binary tree traversal** (in-order, pre-order).
+    - Write a function to **find the height** of a tree.
+    - Solve **searching in a BST** using recursion.
+- **Practice on**: LeetCode (Tree-based Problems).
+
+---
+
+### **Phase 3: Algorithms (4 Weeks)**
+
+This phase focuses on the **core algorithms** you need to know, including sorting, searching, recursion, and dynamic programming.
+
+### **Week 6: Sorting and Searching**
+
+- **Concepts**:
+    - Sorting algorithms: **Bubble Sort, Insertion Sort, Merge Sort, Quick Sort**
+    - Searching algorithms: **Binary Search** and its variations
+    - Use cases: Searching on sorted arrays, Range-based queries
+- **Tasks**:
+    - Implement **merge sort** and **quick sort**.
+    - Use **binary search** to find the square root of a number.
+    - Solve the **first bad version problem** (binary search problem).
+- **Practice on**: LeetCode (Sorting and Binary Search Problems).
+
+---
+
+### **Week 7: Recursion and Backtracking**
+
+- **Concepts**:
+    - **Recursion**: Base case and recursive case
+    - **Backtracking**: Sudoku solver, N-Queens problem
+    - Use cases: Exploring all possibilities, solving puzzles
+- **Tasks**:
+    - Write a **recursive function** to print all subsets of a string.
+    - Solve the **N-Queens problem**.
+    - Implement a **maze solver** using backtracking.
+- **Practice on**: LeetCode (Recursion and Backtracking).
+
+---
+
+### **Week 8: Dynamic Programming (DP)**
+
+- **Concepts**:
+    - Memoization vs Tabulation
+    - Classic problems: Fibonacci, Knapsack, Longest Common Subsequence
+    - Use cases: Optimal substructure, overlapping subproblems
+- **Tasks**:
+    - Implement the **Fibonacci sequence** using memoization.
+    - Solve the **0/1 Knapsack problem** using dynamic programming.
+    - Find the **longest increasing subsequence** in an array.
+- **Practice on**: LeetCode (DP Problems).
+
+---
+
+### **Phase 4: Graphs and Advanced Topics (2 Weeks)**
+
+### **Week 9: Graphs**
+
+- **Concepts**:
+    - Graph representations: **Adjacency Matrix and List**
+    - **Breadth-First Search (BFS)** and **Depth-First Search (DFS)**
+    - Use cases: Shortest path, Network traversal, Web scraping
+- **Tasks**:
+    - Implement **BFS and DFS** on a graph.
+    - Solve the **shortest path** problem using BFS.
+    - Write a function to detect **cycles in a graph**.
+- **Practice on**: LeetCode (Graph Problems).
+
+---
+
+### **Week 10: Advanced Topics (Optional)**
+
+- **Concepts**:
+    - **Trie (Prefix Tree)**: Autocomplete systems
+    - **Segment Trees**: Range-based queries
+    - **Union-Find (Disjoint Set)**: Network connectivity
+- **Tasks**:
+    - Implement a **Trie** for a word dictionary.
+    - Solve **connected components** in a graph using union-find.
+
+---
+
+### **Phase 5: Mock Interviews and Problem-Solving Practice (2 Weeks)**
+
+- **Practice 1-2 problems daily** on LeetCode, Codeforces, or HackerRank.
+- Attempt **mock interviews** with a friend or on platforms like Pramp.
+- Revise concepts and solve common **full-stack problems** like:
+    - LRU Cache implementation
+    - API rate limiter using a queue
+
+---
+
+### **Recommended Resources**:
+
+- **Books**:
+    - *Grokking Algorithms* by Aditya Bhargava
+    - *Cracking the Coding Interview* by Gayle Laakmann McDowell
+- **Platforms**:
+    - LeetCode, HackerRank, Codeforces, and GeeksforGeeks.
+    - Visualize algorithms on [VisuAlgo](https://visualgo.net/en).
+
+---
+
+### **Conclusion**:
+
+This 10-12 week plan will give you a solid grasp of **DSA concepts** and **JavaScript implementations** relevant to a **full-stack developer position**. Stick to the timeline, solve problems daily, and try to participate in **coding contests** to boost your confidence!
+
+[Backend architecture concepts:](https://www.notion.so/Backend-architecture-concepts-13b413d6e16080fa8b1fd86dbe894105?pvs=21)
+
+[Recursion](https://www.notion.so/Recursion-13b413d6e16080c6b5b6e271618af3d9?pvs=21)
+
+[Two pointer tech](https://www.notion.so/Two-pointer-tech-13b413d6e160807ca3e5ec9c32258072?pvs=21)
+
+## Big O notation
