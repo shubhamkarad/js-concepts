@@ -1,0 +1,130 @@
+It is a React framework for building web applications.
+
+It uses React for building interfaces.
+
+Provides additional features that enable you to build a production-ready app.
+
+These features include routing, optimized rendering, data fetching, bundling, compiling and more.
+
+You don’t need to install additional packages as NExtJs provides everything you need.
+
+ 
+
+```jsx
+npx create-next-app@latest
+```
+
+ 
+
+### React server component (RSC)
+
+React server compo is a new architecture introduced by the React team in version 18.
+
+It introduced a new of creating a React Compo, splitting them into two types: 
+
+- Server Component
+- Client component
+
+In NEXTJS all compo are server compo by default
+
+They can run tasks like rendering files or fetching data from the database.
+
+For Client Compo, we have to add ‘user client’ on top of the Compo.
+
+  
+
+## NextJS Routing:
+
+Folder system-based routing mechanism: 
+
+Users can access URL paths in the browser are defined by files and folders in your codebase.
+
+In the app folder about —> page - this will create the route for the about page.
+
+First layout page will render and then it will go to the page.ts and after that it will start rendering the routes.
+
+### Nested Routing
+
+localhost:3000/blog/first
+
+App —> blog—> first —> page.tsx —> FirstBlog
+
+Dynamic nested routing
+
+App—>products—> [productId]—>page.tsx in page.tsx we have to add below code:
+
+export default function productDetails({params}) {
+
+return <h1>Details about product {params.productId}</h1>
+
+}
+
+(auth) - use to create auth routes.
+
+Create a not-found page by creating a not-found.tsx file in app
+
+### Route groups
+
+Allows us to logically group our routes and projects files without affecting the URL path structure.
+
+### Configuring metadata
+
+Export a static metadata object
+
+Export a dynamic  genrateMetadata function.
+
+Metadata rules
+
+Both layout.tsx and page.tsx files can export metadata. If defined in a layout, it applies to all the pages in that layout 
+
+### Set the active state of the routes.
+
+const pathName = usePathname();
+
+const isActive = pathName.startsWith(link.href)
+
+router.back(), router.forward(), router.replace()
+
+## Special files in NextJS
+
+page.tsx
+
+layout.tsx
+
+template.tsx
+
+not-found.tsx
+
+loading.tsx - Allows us to create a loading state that are displayed to users while a specific route segment’s content is loading.
+
+It appears immediately upon a navigation, giving user the assurance in the application is responsive and actively loading content.
+
+error.tsx -   create this file for a specific page, Create error UI tailored to specific segments using the file-system hierarchy to adjust granularity.
+
+Parallel routes
+
+Intercepting routes  → f1() —> (.)f2  
+
+conditional routing
+
+### Cookies in route handlers
+
+Cookies are small pieces of data that a server sends to a user’s web browser.
+
+The browser may store the cookie and send it back to the same server with later requests.
+
+### Rendering in NextJS - Transforms the code you write into user interfaces.
+
+Choosing the right time and place to do this rendering.
+
+CSS, SSR, RSC
+
+## CSR (Client side rendering)
+
+Rendering in React - SPA
+
+Compo code is transformed into a UI directly within the browser. 
+
+## SSR : (Server side Rendering)
+
+Suspense for SSR
